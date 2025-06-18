@@ -9,17 +9,19 @@ namespace Cinema.API.Services
 {
     public class MovieService : IMovie 
     {
-       
+
+        
         private readonly DataContext _context;
-        public MovieService(IMovie imove, DataContext context)
+        public MovieService(DataContext context)
         {
     
+
             _context = context;
         }
 
         public  async Task<Movie> CreateMoveAsync(Movie movie)
         {
-            _context.Movies.AddAsync(movie);
+            await _context.Movies.AddAsync(movie);
             await _context.SaveChangesAsync();
             return movie;
         }
@@ -27,7 +29,6 @@ namespace Cinema.API.Services
         public async Task DeleteMoveAsync(int id)
         {
             var movie = await _context.Movies.FindAsync(id);
-            movie.Status = "disable";
             await _context.SaveChangesAsync();
  
         }
@@ -44,14 +45,14 @@ namespace Cinema.API.Services
 
         public async Task<Movie> UpdateMoveAsync(Movie _movie)
         {
-            var movie = await _context.Movies.FindAsync(_movie.Id);
+            var movie = await _context.Movies.FindAsync(_movie.movieId);
             if (movie != null) { 
-                movie.Name = _movie.Name;
+                movie.movieName = _movie.movieName;
                 _context.Update(movie);
                 await _context.SaveChangesAsync();
                 return movie;
             }
-            return movie;
+            return null;
         }
     }
 

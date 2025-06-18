@@ -4,5 +4,6 @@
     {
         public int cinemaId { get; set; }
         public string cinemaName { get; set; }
+        public Ward ward { get; set; }  
     }
 }

@@ -2,11 +2,12 @@
 {
     public class CinemaSesson
     {
+        public int cinemaId { get; set; }
         public int cinemaSessonId { get; set; }
         public DateTime startedDate { get; set; }
         public TimeOnly startedTime { get; set; }
-        public int movieId { get; set; }
-        public int roomId { get; set; }
-        public int cinemaId { get; set; }
+        public Movie movie { get; set; }
+        public Room room { get; set; }
+        
     }
 }

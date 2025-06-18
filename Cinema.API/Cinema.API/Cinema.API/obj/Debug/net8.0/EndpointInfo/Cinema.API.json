@@ -5,12 +5,11 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/Movie": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "Movie"
         ],
-        "operationId": "GetWeatherForecast",
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Movie"
                   }
                 }
               },
@@ -27,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Movie"
                   }
                 }
               },
@@ -35,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Movie"
                   }
                 }
               }
@@ -47,23 +46,175 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "Actor": {
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
+          "actorId": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "actorName": {
+            "type": "string",
+            "nullable": true
           },
-          "summary": {
+          "movies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movie"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CinemaSesson": {
+        "type": "object",
+        "properties": {
+          "cinemaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cinemaSessonId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "startedTime": {
+            "type": "string",
+            "format": "time"
+          },
+          "movie": {
+            "$ref": "#/components/schemas/Movie"
+          },
+          "room": {
+            "$ref": "#/components/schemas/Room"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Country": {
+        "type": "object",
+        "properties": {
+          "countryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "countryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "movies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movie"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Director": {
+        "type": "object",
+        "properties": {
+          "directorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "directorIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "movies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movie"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Movie": {
+        "type": "object",
+        "properties": {
+          "movieId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movieName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "releaseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sessonList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CinemaSesson"
+            },
+            "nullable": true
+          },
+          "typeList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovieType"
+            },
+            "nullable": true
+          },
+          "actorList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Actor"
+            },
+            "nullable": true
+          },
+          "country": {
+            "$ref": "#/components/schemas/Country"
+          },
+          "director": {
+            "$ref": "#/components/schemas/Director"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovieType": {
+        "type": "object",
+        "properties": {
+          "movieTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movieTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "movies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movie"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Room": {
+        "type": "object",
+        "properties": {
+          "roomID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomName": {
             "type": "string",
             "nullable": true
           }
