@@ -1,0 +1,70 @@
+<div class="container mt-4">
+  <h5 class="navbar navbar-expand-sm bg-secondary text-white  navbar-dark">Thêm phim mới</h5>
+  <form>
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <label>Tên phim<i class="bi bi-asterisk small text-danger "></i>    </label>
+        <input type="text" class="form-control" value="Iron Man 3" />
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Thời lượng<i class="bi bi-asterisk small text-danger "></i></label>
+        <input type="number" class="form-control" value="125" />
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Ngày ra mắt<i class="bi bi-asterisk small text-danger "></i></label>
+        <input type="date" class="form-control" value="2017-09-26" />
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Thể loại<i class="bi bi-asterisk small text-danger "></i></label>
+        <select class="form-select">
+          <option selected>Action</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+        </select>
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Ảnh bìa<i class="bi bi-asterisk small text-danger "></i></label><br />
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Iron_Man_3_theatrical_poster.jpg" width="100" height="100" class="img-thumbnail" />
+        <input type="file" class="form-control mt-2" />
+        <small class="text-muted">Should provide 600x600 dimension</small>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Mô tả</label>
+        <textarea class="form-control" rows="6">
+Iron Man 3 (stylized onscreen as Iron Man Three) is a 2013 American superhero film based on the Marvel Comics character Iron Man, produced by Marvel Studios and distributed by Walt Disney Studios Motion...
+        </textarea>
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Embed Trailer</label>
+        <input type="text" class="form-control" value="https://www.youtube.com/embed/KkEVFPLYv1k" />
+      </div>
+
+
+      <div class="col-md-6 mb-3">
+        <label>Diễn viên<i class="bi bi-asterisk small text-danger "></i></label>
+        <div class="form-control" style="height: auto;">
+          <span class="badge bg-secondary me-1">Brad Pitt</span>
+          <span class="badge bg-secondary me-1">Johnny Depp</span>
+          <span class="badge bg-secondary me-1">Leonardo DiCaprio</span>
+          <span class="badge bg-secondary me-1">Angelina Jolie</span>
+          <span class="badge bg-secondary me-1">Ellen DeGeneres</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary me-2" type="button">Save</button>
+    <button class="btn btn-secondary" type="button">Back</button>
+  </form>
+</div>

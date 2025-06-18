@@ -1,12 +1,85 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|e:\\yang-cinema\\cinema.api\\cinema.api\\cinema.api\\models\\cinemasesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|solutionrelative:cinema.api\\models\\cinemasesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|e:\\yang-cinema\\cinema.api\\cinema.api\\cinema.api\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|solutionrelative:cinema.api\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|e:\\yang-cinema\\cinema.api\\cinema.api\\cinema.api\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|solutionrelative:cinema.api\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|e:\\yang-cinema\\cinema.api\\cinema.api\\cinema.api\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1976305-E1C1-48D3-B022-208C258B78E2}|Cinema.API\\Cinema.API.csproj|solutionrelative:cinema.api\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Country.cs",
+              "DocumentMoniker": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Country.cs",
+              "RelativeDocumentMoniker": "Cinema.API\\Models\\Country.cs",
+              "ToolTip": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Country.cs",
+              "RelativeToolTip": "Cinema.API\\Models\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:38:55.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cinema.cs",
+              "DocumentMoniker": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Cinema.cs",
+              "RelativeDocumentMoniker": "Cinema.API\\Models\\Cinema.cs",
+              "ToolTip": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Cinema.cs",
+              "RelativeToolTip": "Cinema.API\\Models\\Cinema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:37:20.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CinemaSesson.cs",
+              "DocumentMoniker": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\CinemaSesson.cs",
+              "RelativeDocumentMoniker": "Cinema.API\\Models\\CinemaSesson.cs",
+              "ToolTip": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\CinemaSesson.cs",
+              "RelativeToolTip": "Cinema.API\\Models\\CinemaSesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:35:34.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Cinema.API\\Models\\Room.cs",
+              "ToolTip": "E:\\yang-cinema\\Cinema.API\\Cinema.API\\Cinema.API\\Models\\Room.cs",
+              "RelativeToolTip": "Cinema.API\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:10:24.847Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

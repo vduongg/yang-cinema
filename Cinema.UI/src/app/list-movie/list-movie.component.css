@@ -1,0 +1,9 @@
+.container{
+    padding-top: 20px;
+    border: 1px solid black;
+}
+
+td{
+    width: 60px;
+    height: 100px;
+}
