@@ -1,6 +1,24 @@
+
 <div class="container">
 <h5 class="navbar navbar-expand-sm bg-secondary text-white  navbar-dark">List Movie</h5>
-  <button   class="btn btn-primary my-3">+ Thêm phim mới </button>
+  <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#myModal">
+    +Thêm phim mới
+</button>
+
+<div class="modal modal-lg" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Thêm phim mới</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <app-add-movie></app-add-movie>
+      </div>
+
+    </div>
+  </div>
+</div>
 
   <div class="row mb-3">
     <div class="col-md-3">
@@ -23,7 +41,6 @@
   <table class="table table-bordered table-hover">
     <thead class="thead-light">
       <tr>
-        <th scope="col"><input type="checkbox" /></th>
         <th scope="col">Name</th>
         <th scope="col">Avatar</th>
         <th scope="col">Duration(min)</th>
@@ -35,7 +52,6 @@
     <tbody>
        @for (item of numbers; track $index) {
         <tr >
-        <td><input type="checkbox" /></td>
         <td>Black Panther</td>
         <td><img style="height: 100%; width: 100%;" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="60" /></td>
         <td>180</td>

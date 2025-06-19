@@ -1,5 +1,5 @@
 <div class="container mt-4">
-  <h5 class="navbar navbar-expand-sm bg-secondary text-white  navbar-dark">Thêm phim mới</h5>
+
   <form>
     <div  class="row">
 
@@ -32,10 +32,9 @@
 
 
       <div class="col-md-6 mb-3">
-        <label>Ảnh bìa<i class="bi bi-asterisk small text-danger "></i></label><br />
+         <label>Ảnh bìa</label>
+        <input type="text" class="form-control" value="https://www.youtube.com/embed/KkEVFPLYv1k" />
         <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Iron_Man_3_theatrical_poster.jpg" width="100" height="100" class="img-thumbnail" />
-        <input type="file" class="form-control mt-2" />
-        <small class="text-muted">Should provide 600x600 dimension</small>
       </div>
 
       <div class="col-md-6 mb-3">
@@ -64,7 +63,10 @@ Iron Man 3 (stylized onscreen as Iron Man Three) is a 2013 American superhero fi
       </div>
     </div>
 
-    <button class="btn btn-primary me-2" type="button">Save</button>
-    <button class="btn btn-secondary" type="button">Back</button>
+   
+     <div class="modal-footer">
+      <button type="button" class="btn btn-primary" >Save</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
   </form>
 </div>

@@ -98,8 +98,7 @@
               "RelativeToolTip": "Cinema.API\\Interfaces\\IDirector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T05:00:02.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T05:00:02.976Z"
             },
             {
               "$type": "Document",
@@ -147,8 +146,7 @@
               "RelativeToolTip": "Cinema.API\\Interfaces\\IActor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T04:59:14.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:59:14.313Z"
             },
             {
               "$type": "Document",
@@ -257,8 +255,7 @@
               "RelativeToolTip": "Cinema.API\\Interfaces\\IMovie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:34:47.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T10:34:47.874Z"
             },
             {
               "$type": "Document",
@@ -306,8 +303,7 @@
               "RelativeToolTip": "Cinema.API\\Services\\MovieService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:29:20.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T10:29:20.026Z"
             },
             {
               "$type": "Document",
@@ -319,8 +315,7 @@
               "RelativeToolTip": "Cinema.API\\Controllers\\MovieController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:27:39.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T10:27:39.114Z"
             }
           ]
         }

@@ -1,9 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AddMovieComponent } from '../add-movie/add-movie.component';
+
 
 @Component({
   selector: 'app-list-movie',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, AddMovieComponent],
   templateUrl: './list-movie.component.html',
   styleUrl: './list-movie.component.css'
 })
