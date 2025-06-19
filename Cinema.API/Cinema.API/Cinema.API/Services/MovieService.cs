@@ -19,14 +19,18 @@ namespace Cinema.API.Services
             _context = context;
         }
 
-        public  async Task<Movie> CreateMoveAsync(Movie movie)
+        public  async Task<Movie> CreateMovieAsync(Movie movie)
         {
+            if(movie == null) 
+            {
+                return null;
+            }
             await _context.Movies.AddAsync(movie);
             await _context.SaveChangesAsync();
             return movie;
         }
 
-        public async Task DeleteMoveAsync(int id)
+        public async Task DeleteMovieAsync(int id)
         {
             var movie = await _context.Movies.FindAsync(id);
             await _context.SaveChangesAsync();
@@ -43,7 +47,7 @@ namespace Cinema.API.Services
             return await _context.Movies.FindAsync(id);
         }
 
-        public async Task<Movie> UpdateMoveAsync(Movie _movie)
+        public async Task<Movie> UpdateMovieAsync(Movie _movie)
         {
             var movie = await _context.Movies.FindAsync(_movie.movieId);
             if (movie != null) { 

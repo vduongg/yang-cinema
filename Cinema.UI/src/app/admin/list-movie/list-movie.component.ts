@@ -10,4 +10,5 @@ import { Component } from '@angular/core';
 
 export class ListMovieComponent {
   numbers = Array(5).fill(0).map((_, i) => i + 1);
+   
 }

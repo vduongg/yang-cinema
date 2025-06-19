@@ -7,9 +7,9 @@ namespace Cinema.API.Interfaces
     {
        Task<List<Movie>> GetAllMoviesAsync();
        Task<Movie> GetMovieByIdAsync(int id); 
-       Task<Movie> CreateMoveAsync(Movie movie);
-       Task<Movie> UpdateMoveAsync(Movie movie);
-       Task DeleteMoveAsync(int id);
+       Task<Movie> CreateMovieAsync(Movie movie);
+       Task<Movie> UpdateMovieAsync(Movie movie);
+       Task DeleteMovieAsync(int id);
 
     }
 }
